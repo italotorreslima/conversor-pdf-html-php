@@ -1,0 +1,21 @@
+<?php
+$imagick = new Imagick();
+$imagick->setResolution(200, 200);
+$imagick->readImage('myfile.pdf');
+$imagick->setImageCompressionQuality(4);
+$imagick->writeImages('images/converted.png', false);
+echo '<img style="width: 100%;" width="1080" src="images/converted-0.png">';
+echo '<br>';
+echo '<img style="width: 100%;" width="1080" src="images/converted-1.png">';
+echo '<br>';
+echo '<img style="width: 100%;" width="1080" src="images/converted-2.png">';
+echo '<br>';
+echo '<img style="width: 100%;" width="1080" src="images/converted-3.png">';
+echo '<br>';
+echo '<img style="width: 100%;" width="1080" src="images/converted-4.png">';
+echo '<br>';
+echo '<img style="width: 100%;" width="1080" src="images/converted-5.png">';
+echo '<br>';
+echo '<img style="width: 100%;" width="1080" src="images/converted-6.png">';
+echo '<br>';
+echo '<img style="width: 100%;" width="1080" src="images/converted-7.png">';
